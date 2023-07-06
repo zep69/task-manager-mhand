@@ -1,8 +1,9 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+	<!-- <div id="nav">
+		<Button text label="Home" @click="$router.push('/')"> </Button>
+		<Button text label="About" @click="$router.push('/about')" severity="danger"></Button>
+  </div> -->
+
   <router-view/>
 </template>
 

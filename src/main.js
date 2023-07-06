@@ -2,5 +2,30 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import PrimeVue from 'primevue/config';
 
-createApp(App).use(store).use(router).mount('#app')
+import "primevue/resources/themes/lara-light-blue/theme.css";
+import "primevue/resources/primevue.min.css"
+import 'primeicons/primeicons.css';
+
+//elements
+import Button from 'primevue/button'
+import Card from 'primevue/card'
+import InputText from 'primevue/inputtext';
+import Password from 'primevue/password';
+
+const app = createApp(App);
+app.use(PrimeVue);
+app.use(router)
+app.use(store)
+
+app.component('Button',Button )
+app.component('Card', Card)
+app.component('Input', InputText)
+app.component('Password', Password)
+
+
+
+
+
+app.mount('#app')
