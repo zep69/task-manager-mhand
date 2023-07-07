@@ -13,6 +13,8 @@ import Button from 'primevue/button'
 import Card from 'primevue/card'
 import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
+import Checkbox from 'primevue/checkbox';
+import Dialog from 'primevue/dialog';
 
 const app = createApp(App);
 app.use(PrimeVue);
@@ -23,6 +25,8 @@ app.component('Button',Button )
 app.component('Card', Card)
 app.component('Input', InputText)
 app.component('Password', Password)
+app.component('Checkbox', Checkbox)
+app.component('Dialog', Dialog)
 
 
 
